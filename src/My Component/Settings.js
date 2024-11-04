@@ -1,11 +1,16 @@
 import React, { useState, useEffect } from 'react';
 
 function Settings({ onColorChange, onFontSizeChange }) {
-    // Initialize state with values from localStorage or defaults
+    // Load initial state from localStorage or set default values
     const [color, setColor] = useState(() => localStorage.getItem('backgroundColor') || '#f8f9fa');
     const [fontSize, setFontSize] = useState(() => localStorage.getItem('fontSize') || 'medium');
 
-    // Update color and save to localStorage
+    // Ensure parent receives the initial settings when component mounts
+    useEffect(() => {
+        onColorChange(color);
+        onFontSizeChange(fontSize);
+    }, [color, fontSize, onColorChange, onFontSizeChange]);
+
     const handleColorChange = (e) => {
         const selectedColor = e.target.value;
         setColor(selectedColor);
@@ -13,19 +18,12 @@ function Settings({ onColorChange, onFontSizeChange }) {
         onColorChange(selectedColor); // Pass up to parent
     };
 
-    // Update font size and save to localStorage
     const handleFontSizeChange = (e) => {
         const selectedFontSize = e.target.value;
         setFontSize(selectedFontSize);
         localStorage.setItem('fontSize', selectedFontSize); // Save to localStorage immediately
         onFontSizeChange(selectedFontSize); // Pass up to parent
     };
-
-    // Effect to load initial settings into the parent component
-    useEffect(() => {
-        onColorChange(color);
-        onFontSizeChange(fontSize);
-    }, [color, fontSize, onColorChange, onFontSizeChange]);
 
     return (
         <div>
