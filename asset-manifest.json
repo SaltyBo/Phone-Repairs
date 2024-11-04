@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/Phone-Repairs/static/css/main.e6c13ad2.css",
+    "main.js": "/Phone-Repairs/static/js/main.313562d1.js",
+    "static/js/453.ec836b2a.chunk.js": "/Phone-Repairs/static/js/453.ec836b2a.chunk.js",
+    "static/media/Cat4.jpg": "/Phone-Repairs/static/media/Cat4.378e1e54faa808c965f7.jpg",
+    "static/media/Cat3.jpg": "/Phone-Repairs/static/media/Cat3.05ce75b8d7ca986d7d8a.jpg",
+    "static/media/Cat1.jpg": "/Phone-Repairs/static/media/Cat1.8812643bc1672996f25d.jpg",
+    "static/media/Cat2.jpg": "/Phone-Repairs/static/media/Cat2.617fa2aaa948dd9f9b59.jpg",
+    "index.html": "/Phone-Repairs/index.html",
+    "main.e6c13ad2.css.map": "/Phone-Repairs/static/css/main.e6c13ad2.css.map",
+    "main.313562d1.js.map": "/Phone-Repairs/static/js/main.313562d1.js.map",
+    "453.ec836b2a.chunk.js.map": "/Phone-Repairs/static/js/453.ec836b2a.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e6c13ad2.css",
+    "static/js/main.313562d1.js"
+  ]
+}
